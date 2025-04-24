@@ -23,7 +23,7 @@ const Navbar = () => {
     router.push(path.toLowerCase()); // assumes lowercase routes (e.g. "/services")
   };
 
-  const navItems = [ "WORK", "NOTES", "EXPERIENCE", "Contact Us",];
+  const navItems = [ "WORK", "NOTES", "EXPERIENCE", "CONTACT US",];
 
   return (
     <nav className="">
