@@ -3,12 +3,10 @@ import Image from "next/image";
 import React from "react";
 import vector from "../assets/vector.png";
 import myImg from "../assets/myImg.png";
-import logo from "../assets/logo.png";
 import { AntDesignOutlined, MobileOutlined } from "@ant-design/icons";
 import { Laptop } from "lucide-react";
 import SkillsSection from "@/components/SkillSection";
 import SocialLinks from "@/components/SocialLinks";
-import { FaPhone } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
 
 function Portfolio() {
