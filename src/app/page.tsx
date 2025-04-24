@@ -1,4 +1,4 @@
-import { Button, Card, Col, Row } from "antd";
+import { Card, Col, Row } from "antd";
 import Image from "next/image";
 import React from "react";
 import vector from "../assets/vector.png";
@@ -8,6 +8,8 @@ import { Laptop } from "lucide-react";
 import SkillsSection from "@/components/SkillSection";
 import SocialLinks from "@/components/SocialLinks";
 import Navbar from "@/components/Navbar";
+import Experience from "@/components/Experience";
+import ContactForm from "@/components/Contact";
 
 function Portfolio() {
   return (
@@ -155,57 +157,13 @@ function Portfolio() {
         <SkillsSection />
       </section>
 
-      <section id="experience" className="mt-20 px-5 sm:px-20 lg:px-20 bg-[#fffff4] py-10">
-        <h2 className="text-3xl font-semibold mb-10">My Work Experience</h2>
-        <div className="relative border-l-4 border-dotted border-orange-300 pl-6 space-y-10">
-          <div className="absolute top-1 left-[-10px] w-4 h-4 bg-orange-400 rounded-full"></div>
-          <div>
-            <p className="text-xl font-bold text-gray-800">FitPeo</p>
-            <p className="text-sm text-gray-500">Nov 2024 - Apr 2025</p>
-            <p className="text-md">
-              <span className="font-semibold text-lg">Web Developer</span> –
-              Created dashboards using Remix & React.js. Integrated RPM, CCM,
-              PCM features.
-            </p>
-          </div>
-          <div className="absolute top-28 left-[-10px] w-4 h-4 bg-orange-400 rounded-full"></div>
-          <div>
-            <p className="text-xl font-bold text-gray-800">Credex Technology</p>
-            <p className="text-sm text-gray-500">Jan 2022 - Sept 2024</p>
-            <p className="text-md">
-              <span className="font-semibold text-lg">Software Engineer</span> –
-              Built responsive web apps, led API integration and optimization
-              efforts.
-            </p>
-          </div>
-        </div>
-      </section>
+      <>
+        <Experience />
+      </>
 
-      <section className="mt-20 px-5 sm:px-20 lg:px-20">
-        <h2 className="text-3xl font-semibold mb-6">Contact Me</h2>
-        <form className="lg:max-w-xl space-y-4">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="w-full p-3 border border-gray-300 rounded-md"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="w-full p-3 border border-gray-300 rounded-md"
-          />
-          <textarea
-            placeholder="Your Message"
-            className="w-full p-3 border border-gray-300 rounded-md h-32"
-          ></textarea>
-          <Button
-            className="bg-blue-500 hover:bg-purple-700 text-white"
-            style={{ background: "#2b7fff", color: "white" }}
-          >
-            Send Message
-          </Button>
-        </form>
-      </section>
+      <>
+        <ContactForm />
+      </>
 
       <footer className="text-center mt-10 text-sm text-white py-10 bg-[#171717] border-t">
         <p>
