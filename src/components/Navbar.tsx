@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const navigateTo = (path: string) => {
     setIsOpen(false); // close mobile menu
-    if(path === "Contact Us") {
+    if(path === "CONTACT US") {
       window.scrollTo({
         top: document.getElementById("contactUs")?.offsetTop,
         behavior: "smooth",
