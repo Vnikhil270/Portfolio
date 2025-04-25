@@ -38,7 +38,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <p
               key={item}
-              className="text-sm font-medium cursor-pointer hover:text-orange-600 transition-all"
+              className="text-sm font-medium cursor-pointer hover:text-orange-600 transition-all border-x rounded-full px-2"
               onClick={() => navigateTo(item)}
             >
               {item}
